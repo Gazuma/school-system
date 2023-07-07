@@ -1,0 +1,27 @@
+<% layout("layouts/boilerplate")%>
+
+<body>
+    <div>
+        <form action="/addstudent" method = "POST">
+            <div class="mb-3">
+                <label for="form-label" for="name">
+                    Name :
+                </label>
+                <input class = "form-control" type="text" name="Student[name]" id="name" placeholder = "Enter Student Name " required>
+                <div class="valid-feedback">
+                    Looks Good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="form-label" for="UID">
+                    UID :
+                </label>
+                <input class = "form-control" type="text" name="Student[UID]" id="UID" placeholder = "Enter Student UID" required>
+                <div class="valid-feedback">
+                    Looks Good!
+                </div>
+            </div>
+            <button class="btn btn-success">Submit</button>
+        </form>
+    </div>
+</body>

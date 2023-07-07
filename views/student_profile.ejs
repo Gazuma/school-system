@@ -1,0 +1,21 @@
+<% layout("layouts/boilerplate")%>
+
+<body>
+    <div>
+        
+        <h1><%=record.name%></h1>
+        <a href="/student_profile/<%=record._id%>/activity">Add Activity</a>
+        <%for (activity of (record.activities)){%>
+            <div>
+                <h5>
+                    <%=activity.title%>
+                </h5>
+                <p>
+                    <%=activity.description%>
+                    <br>
+                    Hours : <%=activity.hours%>
+                </p>
+            </div>
+        <%}%>
+    </div>
+</body>
